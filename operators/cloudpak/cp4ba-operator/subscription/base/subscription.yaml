@@ -9,17 +9,18 @@ spec:
   installPlanApproval: Automatic
   source: ibm-cp4a-operator-catalog
   sourceNamespace: openshift-marketplace
+  startingCSV: ibm-cp4a-operator.v22.1.0
 
----
+# ---
 
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
-metadata:
-  name: ibm-common-services-subscription
-  namespace: cp4ba
-spec:
-  channel: v3
-  name: ibm-common-service-operator
-  installPlanApproval: Manual
-  source: opencloud-operators
-  sourceNamespace: openshift-marketplace
+# apiVersion: operators.coreos.com/v1alpha1
+# kind: Subscription
+# metadata:
+#   name: ibm-common-services-subscription
+#   namespace: cp4ba
+# spec:
+#   channel: v3
+#   name: ibm-common-service-operator
+#   installPlanApproval: Manual
+#   source: opencloud-operators
+#   sourceNamespace: openshift-marketplace
